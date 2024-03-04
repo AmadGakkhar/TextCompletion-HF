@@ -1,0 +1,6 @@
+torch
+tensorflow
+transformers
+pydantic
+fastapi
+uvicorn[standard]
