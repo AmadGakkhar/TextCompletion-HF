@@ -1,4 +1,4 @@
-name: Trigger auto deployment for demo-container
+name: CI-AzureCR
 
 #env:
 #  AZURE_CONTAINER_APP_NAME: demo-container
