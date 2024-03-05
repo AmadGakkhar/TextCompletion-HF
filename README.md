@@ -41,3 +41,11 @@ The workflow in docker-image.yml creates a docker container and pushes it to Doc
         
     5. Add the output in github secrets under AZURE_CREDENTIALS
     6. Configure the yml file in workflows.
+    7. If running into trouble, check logs in the portal or use the following with the Azure CLI:
+    
+    ```
+    az containerapp logs  show  --name $CONTAINER_APP_NAME --resource-group $RESOURCE_GROUP_NAME --follow
+    ```
+    
+    Update both variables to match your environment
+
