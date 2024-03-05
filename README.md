@@ -27,3 +27,8 @@ The workflow in docker-image.yml creates a docker container and pushes it to Doc
     3. Update tags and add repo name in small caps.
     4. Run workflow
 
+## Azure Deployment
+
+    1. Create a Container App from Azure Portal.
+    2. Update Ingress from Left Side Panel (Verify Target port. It should be the same as exposed by your app.)
+    3. From Settings select Containers and click on Edit and Deploy to change container specs.
