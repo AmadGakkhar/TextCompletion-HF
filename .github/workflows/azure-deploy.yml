@@ -60,4 +60,4 @@ jobs:
             az config set extension.use_dynamic_install=yes_without_prompt
             az containerapp registry set -n text-completion2623 -g textCompletion --server mycontainers2623.azurecr.io --username ${{ secrets.ACR_USERNAME }} --password ${{ secrets.ACR_PASSWORD }}
             az containerapp update -n text-completion2623 -g textCompletion --cpu 2 --memory 4Gi
-            az containerapp update -n text-completion2623 -g textCompletion --image demoalfredo.azurecr.io/alfredodeza/huggingface-azure-acr:${{ github.sha }}
+            az containerapp update -n text-completion2623 -g textCompletion --image mycontainers2623.azurecr.io/amadgakkhar/textcompletion-hf:${{ github.sha }}
