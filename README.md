@@ -32,3 +32,11 @@ The workflow in docker-image.yml creates a docker container and pushes it to Doc
     1. Create a Container App from Azure Portal.
     2. Update Ingress from Left Side Panel (Verify Target port. It should be the same as exposed by your app.)
     3. From Settings select Containers and click on Edit and Deploy to change container specs.
+    4. Azure Service Principal Registration
+        A Service Principal with the following details the AppID, password, and tenant information. Create one with: `az ad sp create-for-rbac -n "REST API Service           Principal"` and assign the IAM role for the subscription. Alternatively set the proper role access using the following command (use a real subscription id       and replace it):
+        
+        ```
+        az ad sp create-for-rbac --name "CICD" --role contributor --scopes /subscriptions/$AZURE_SUBSCRIPTION_ID --sdk-auth
+        ```
+    5. Add the output in github secrets under AZURE_CREDENTIALS
+    6. Configure the yml file in workflows.
