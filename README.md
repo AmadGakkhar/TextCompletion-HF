@@ -21,9 +21,9 @@ The workflow in azure-acr.yml creates a docker container and pushes it to Azure 
 
 ## DockerHub Container
 The workflow in docker-image.yml creates a docker container and pushes it to DockerHub Registry.
-
-  1. Create access token in DockerHub
-  2. Update Repo Action Secrets and add Dockerhub access token and user name.
-  3. Update tags and add repo name in small caps.
-  4. Run workflow
+    
+    1. Create access token in DockerHub
+    2. Update Repo Action Secrets and add Dockerhub access token and user name.
+    3. Update tags and add repo name in small caps.
+    4. Run workflow
 
